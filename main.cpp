@@ -3,6 +3,7 @@
 #include "prototype_model.h"
 #include "factory_model.h"
 #include "proxy_model.h"
+#include "decorator_model.h"
 #include "thread"
 
 using namespace std;
@@ -17,12 +18,15 @@ void run_factory_method();
 
 void run_proxy();
 
+void run_decorator();
+
 int main() {
 //    run_instance();
 //    run_prototype();
 //    run_simple_factory();
 //    run_factory_method();
-    run_proxy();
+//    run_proxy();
+    run_decorator();
 
     return 0;
 }
@@ -76,4 +80,25 @@ void run_proxy() {
 
         std::this_thread::sleep_for(std::chrono::milliseconds(2000));
     }
+}
+
+void run_decorator() {
+    FileStreamReader reader;
+    DecryptStreamReader decrypt(&reader);
+    ImageDecodeStreamReader decoder(&decrypt);
+
+    decoder.open(R"(D:\CPP_Workplace\Design_Model\text.txt)");
+
+    while (1) {
+        uint8_t buffer[1024];
+        int ret = reader.read(buffer, 1024);
+        if (ret <= 0) break;
+
+        for (int i = 0; i < ret; i ++) {
+            cout << buffer[i];
+        }
+        cout << endl;
+    }
+
+    reader.close();
 }

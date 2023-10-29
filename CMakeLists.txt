@@ -3,6 +3,9 @@ project(Design_Model)
 
 set(CMAKE_CXX_STANDARD 14)
 
+# Introduce libcurl
+find_package(CURL CONFIG REQUIRED)
+
 add_executable(Design_Model main.cpp
         instance_model.cpp
         instance_model.h
@@ -12,4 +15,8 @@ add_executable(Design_Model main.cpp
         factory_model.h
         proxy_model.cpp
         proxy_model.h
+        decorator_model.cpp
+        decorator_model.h
 )
+
+target_link_libraries(Design_Model PRIVATE CURL::libcurld)

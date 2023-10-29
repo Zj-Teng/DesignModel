@@ -1,0 +1,10 @@
+{
+  "name" : "design-model",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "06c79a9afa6f99f02f44d20df9e0848b2a56bf1b",
+  "dependencies" : [ {
+    "name" : "libcurl-simple-https",
+    "version>=" : "2022-02-14",
+    "$comment" : "  # this is heuristically generated, and may not be correct\n\n  find_package(libcurl-simple-https CONFIG REQUIRED)\n\n  target_link_libraries(main PRIVATE libcurl-simple-https)\n"
+  } ]
+}
