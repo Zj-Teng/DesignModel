@@ -19,4 +19,4 @@ add_executable(Design_Model main.cpp
         decorator_model.h
 )
 
-target_link_libraries(Design_Model PRIVATE CURL::libcurld)
+target_link_libraries(Design_Model PRIVATE CURL::libcurl)
