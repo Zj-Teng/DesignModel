@@ -5,6 +5,9 @@
 #include "proxy_model.h"
 #include "decorator_model.h"
 #include "thread"
+#include "observer_model.h"
+#include "iterator_model.h"
+#include "builder_model.h"
 
 using namespace std;
 
@@ -20,13 +23,22 @@ void run_proxy();
 
 void run_decorator();
 
+void run_observer();
+
+void run_iterator();
+
+void run_builder();
+
 int main() {
 //    run_instance();
 //    run_prototype();
 //    run_simple_factory();
 //    run_factory_method();
 //    run_proxy();
-    run_decorator();
+//    run_decorator();
+//    run_observer();
+//    run_iterator();
+    run_builder();
 
     return 0;
 }
@@ -101,4 +113,38 @@ void run_decorator() {
     }
 
     reader.close();
+}
+
+void run_observer() {
+    UserWallet wallet;
+    UserMessageObserver observer(&wallet);
+    wallet.deposit(100.);
+
+    for (int i = 0; i < 95; i ++) {
+        wallet.consume(1.);
+        cout << wallet.getBalance() << endl;
+    }
+}
+
+void run_iterator() {
+    Company cpy;
+    cpy.addStaff("123", 23, "12432");
+    cpy.addStaff("123", 24, "12432");
+    cpy.addStaff("123", 25, "12432");
+
+    cpy.first();
+    while (!cpy.isEnd()) {
+        Staff s = cpy.next();
+        cout << s.age_ << endl;
+    }
+}
+
+void run_builder() {
+    SystemConfigBuilder builder;
+    builder.setMySQL("123", "123", "123");
+    builder.setRedis("123", "123", "123");
+    builder.setKafka("123", "123", "123");
+    SystemConfig config = builder.getSystemConfig();
+
+    cout << config.MySQL_URL_ << endl;
 }

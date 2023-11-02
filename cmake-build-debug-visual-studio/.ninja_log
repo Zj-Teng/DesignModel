@@ -1,8 +1,15 @@
 # ninja log v5
-16	409	7202677979541624	CMakeFiles/Design_Model.dir/proxy_model.cpp.obj	4e6aa9e350f3bfdd
+10	626	7202881470087293	CMakeFiles/Design_Model.dir/proxy_model.cpp.obj	4e6aa9e350f3bfdd
 9	428	7202677979741633	CMakeFiles/Design_Model.dir/prototype_model.cpp.obj	e3b464653839ac97
 12	596	7202677981401626	CMakeFiles/Design_Model.dir/factory_model.cpp.obj	61e4e2db064c3914
-5	639	7202677981841621	CMakeFiles/Design_Model.dir/instance_model.cpp.obj	b6385df844cc728e
-0	660	7202677982053653	CMakeFiles/Design_Model.dir/main.cpp.obj	15c1c8981099b57
+6	791	7202881471743790	CMakeFiles/Design_Model.dir/instance_model.cpp.obj	b6385df844cc728e
+1	650	7204380005028161	CMakeFiles/Design_Model.dir/main.cpp.obj	15c1c8981099b57
 20	921	7202677984658423	CMakeFiles/Design_Model.dir/decorator_model.cpp.obj	7bed9483c7293f9a
-921	1579	7202677988270703	Design_Model.exe	b968291cdc2f1227
+651	2290	7204380013228820	Design_Model.exe	51413abddb24b3f2
+0	420	7202882428935101	CMakeFiles/Design_Model.dir/observer_model.cpp.obj	aa50e1833c7e5557
+6	566	7204380004182041	CMakeFiles/Design_Model.dir/iterator_model.cpp.obj	fdfbd549f90f4852
+6	607	7206160252084506	CMakeFiles/Design_Model.dir/builder_model.cpp.obj	77501cab37466b3d
+1	664	7206160252647176	CMakeFiles/Design_Model.dir/main.cpp.obj	15c1c8981099b57
+664	2339	7206160261115291	Design_Model.exe	fc165adbd7f56462
+1	476	7206160654608947	CMakeFiles/Design_Model.dir/main.cpp.obj	15c1c8981099b57
+476	927	7206160655957376	Design_Model.exe	fc165adbd7f56462

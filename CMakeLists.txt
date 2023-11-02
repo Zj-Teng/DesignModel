@@ -17,6 +17,12 @@ add_executable(Design_Model main.cpp
         proxy_model.h
         decorator_model.cpp
         decorator_model.h
+        observer_model.cpp
+        observer_model.h
+        iterator_model.cpp
+        iterator_model.h
+        builder_model.cpp
+        builder_model.h
 )
 
 target_link_libraries(Design_Model PRIVATE CURL::libcurl)
