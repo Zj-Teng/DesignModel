@@ -1,0 +1,8 @@
+//
+// Created by TeTng on 2023/10/29.
+//
+
+#ifndef DESIGN_MODEL_OBSERVER_MODEL_H
+#define DESIGN_MODEL_OBSERVER_MODEL_H
+
+#endif //DESIGN_MODEL_OBSERVER_MODEL_H
