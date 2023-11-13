@@ -121,6 +121,14 @@ build CMakeFiles\Design_Model.dir\builder_model.cpp.obj: CXX_COMPILER__Design_Mo
   TARGET_COMPILE_PDB = CMakeFiles\Design_Model.dir\
   TARGET_PDB = Design_Model.pdb
 
+build CMakeFiles\Design_Model.dir\adapter_model.cpp.obj: CXX_COMPILER__Design_Model_unscanned_Debug D$:\CPP_Workplace\Design_Model\adapter_model.cpp || cmake_object_order_depends_target_Design_Model
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
+  INCLUDES = -external:ID:\vcpkg\installed\x86-windows\include -external:W0
+  OBJECT_DIR = CMakeFiles\Design_Model.dir
+  OBJECT_FILE_DIR = CMakeFiles\Design_Model.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Design_Model.dir\
+  TARGET_PDB = Design_Model.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Design_Model
@@ -129,7 +137,7 @@ build CMakeFiles\Design_Model.dir\builder_model.cpp.obj: CXX_COMPILER__Design_Mo
 #############################################
 # Link the executable Design_Model.exe
 
-build Design_Model.exe: CXX_EXECUTABLE_LINKER__Design_Model_Debug CMakeFiles\Design_Model.dir\main.cpp.obj CMakeFiles\Design_Model.dir\instance_model.cpp.obj CMakeFiles\Design_Model.dir\prototype_model.cpp.obj CMakeFiles\Design_Model.dir\factory_model.cpp.obj CMakeFiles\Design_Model.dir\proxy_model.cpp.obj CMakeFiles\Design_Model.dir\decorator_model.cpp.obj CMakeFiles\Design_Model.dir\observer_model.cpp.obj CMakeFiles\Design_Model.dir\iterator_model.cpp.obj CMakeFiles\Design_Model.dir\builder_model.cpp.obj | D$:\vcpkg\installed\x86-windows\debug\lib\libcurl-d.lib
+build Design_Model.exe: CXX_EXECUTABLE_LINKER__Design_Model_Debug CMakeFiles\Design_Model.dir\main.cpp.obj CMakeFiles\Design_Model.dir\instance_model.cpp.obj CMakeFiles\Design_Model.dir\prototype_model.cpp.obj CMakeFiles\Design_Model.dir\factory_model.cpp.obj CMakeFiles\Design_Model.dir\proxy_model.cpp.obj CMakeFiles\Design_Model.dir\decorator_model.cpp.obj CMakeFiles\Design_Model.dir\observer_model.cpp.obj CMakeFiles\Design_Model.dir\iterator_model.cpp.obj CMakeFiles\Design_Model.dir\builder_model.cpp.obj CMakeFiles\Design_Model.dir\adapter_model.cpp.obj | D$:\vcpkg\installed\x86-windows\debug\lib\libcurl-d.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = D:\vcpkg\installed\x86-windows\debug\lib\libcurl-d.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

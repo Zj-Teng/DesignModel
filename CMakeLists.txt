@@ -23,6 +23,8 @@ add_executable(Design_Model main.cpp
         iterator_model.h
         builder_model.cpp
         builder_model.h
+        adapter_model.cpp
+        adapter_model.h
 )
 
 target_link_libraries(Design_Model PRIVATE CURL::libcurl)

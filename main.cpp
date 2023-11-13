@@ -8,6 +8,7 @@
 #include "observer_model.h"
 #include "iterator_model.h"
 #include "builder_model.h"
+#include "adapter_model.h"
 
 using namespace std;
 
@@ -29,6 +30,8 @@ void run_iterator();
 
 void run_builder();
 
+void run_adapter();
+
 int main() {
 //    run_instance();
 //    run_prototype();
@@ -38,7 +41,8 @@ int main() {
 //    run_decorator();
 //    run_observer();
 //    run_iterator();
-    run_builder();
+//    run_builder();
+    run_adapter();
 
     return 0;
 }
@@ -147,4 +151,11 @@ void run_builder() {
     SystemConfig config = builder.getSystemConfig();
 
     cout << config.MySQL_URL_ << endl;
+}
+
+void run_adapter() {
+    Profit *adapterProfit = new USDAdapter();
+    float profit = adapterProfit->getProfit();
+    delete adapterProfit;
+    cout << profit << endl;
 }
